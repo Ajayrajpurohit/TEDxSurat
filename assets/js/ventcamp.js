@@ -1075,7 +1075,7 @@ Ventcamp = {
     styleSwitcherHandler: function (event, $el) {
         event.preventDefault();
 
-        var switcher = $('.style-switcher');
+        
 
         if (switcher.hasClass('style-active')){
             switcher.animate({ marginLeft: '0' }, 200, 'linear');
