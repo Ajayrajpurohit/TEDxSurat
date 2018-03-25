@@ -1,4 +1,4 @@
-﻿/*
+/*
 *
 * Custom js snippets for Ventcamp v2.0
 * by Vivaco
@@ -39,12 +39,15 @@ Ventcamp = {
     log: function (msg) {
         if ( this.options.log ) console.log('%cStartupLy Log: ' + msg, 'color: #1ac6ff');
     },
+
     buildStyleSwitcher: function () {
-        var template = '<div class="style-switcher">' + 
-            '</div>' + 
-            '</div>';
+        var template = '<div class="style-switcher">' +
+             '</div>' +
+        '</div>';
+
         $('body').append(template);
-    }
+    },
+
     // check if site is laoded from mobile device
     checkMobile: function () {
         mobileDeviceOld = this.mobileDevice
@@ -1075,7 +1078,7 @@ Ventcamp = {
     styleSwitcherHandler: function (event, $el) {
         event.preventDefault();
 
-        
+       
 
         if (switcher.hasClass('style-active')){
             switcher.animate({ marginLeft: '0' }, 200, 'linear');
